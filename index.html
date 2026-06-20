@@ -11,6 +11,9 @@
     padding:0;
     box-sizing:border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 
 body{
     font-family: Arial, sans-serif;
@@ -88,12 +91,40 @@ footer{
 .resume-btn:hover{
     background:#dbeafe;
 }
+nav{
+    background:#111827;
+    padding:15px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
 </style>
 </head>
 
 <body>
-
-<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+<header id="home">
     <h1>URMILA MAGADE</h1>
     <p>Diploma IT Student | Summer Intern</p>
     <p>📍 Surat, Gujarat, India</p>
@@ -101,6 +132,7 @@ footer{
     <a href="Resume.pdf" target="_blank" class="resume-btn">
     📄 View Resume
     </a>
+    
 </header>
 
 <div class="container">
@@ -115,6 +147,14 @@ footer{
             and web development projects.
         </p>
     </div>
+    <div class="card" id="about">
+        <h2>About Me</h2>
+            <p>
+                I am a Diploma IT student currently pursuing my studies in Surat.
+                I am passionate about Web Development and Software Development.
+                Currently working as a Summer Intern and building real-world projects.
+            </p>
+    </div>
 
     <div class="card">
         <h2>Education</h2>
@@ -127,18 +167,35 @@ footer{
         </ul>
     </div>
 
-    <div class="card">
+    <div class="card" id="skills">
         <h2>Technical Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>PHP</li>
-            <li>HTML</li>
-            <li>MS Office (Word, Excel, PowerPoint)</li>
-            <li>Digital Marketing</li>
-            <li>Programming Fundamentals</li>
-        </ul>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>MS Office (Word, Excel, PowerPoint)</li>
+                <li>Digital Marketing</li>
+                <li>Programming Fundamentals</li>
+            </ul>
     </div>
+    <div class="card" id="projects">
+        <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Notes Sharing Portal</strong><br>
+                    Developed a website for sharing and downloading academic notes using HTML, CSS and PHP.
+                 </li>
+                <li>
+                    <strong>Personal Portfolio Website</strong><br>
+                    Responsive portfolio website showcasing education, skills and projects.
+                 </li>
+            </ul>
+    </div>
+    
 
     <div class="card">
         <h2>Soft Skills</h2>
@@ -177,11 +234,22 @@ footer{
             <li>YUVA AI for All</li>
         </ul>
     </div>
+    <div class="card" id="contact">
+        <h2>Contact</h2>
+            <p>📧 urmilamagade21@gmail.com</p>
+            <p>📍 Surat, Gujarat, India</p>
+            <p>💻 GitHub:
+                <a href="https://github.com/urmimg" target="_blank">
+                github.com/urmimg
+                </a>
+            </p>
+    </div>
 
 </div>
 
+
 <footer>
-    Designed & Built by Urmila Magade | © 2026
+    Designed & Developed by Urmila Magade | © 2026
 </footer>
 
 </body>
